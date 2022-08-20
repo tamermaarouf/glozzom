@@ -10,6 +10,7 @@
       integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -224,6 +225,53 @@
       </div>
     </section>
 
+    <!-- PHOTO GALLARY -->
+    <section id="gallart" class="py-5">
+      <div class="container">
+        <h1 class="text-center">Photo Gallary</h1>
+        <p class="text-center">check out our photos</p>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox"
+            data-gallary="img-gallary" data-height="560" data-width="560">
+            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
+          </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox"
+            data-gallary="img-gallary" data-height="561" data-width="561">
+            <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
+          </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox"
+            data-gallary="img-gallary" data-height="562" data-width="562">
+            <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
+          </a>
+          </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-4">
+              <a href="https://source.unsplash.com/random/563x563" data-toggle="lightbox"
+              data-gallary="img-gallary" data-height="563" data-width="563">
+              <img src="https://source.unsplash.com/random/563x563" alt="" class="img-fluid">
+            </a>
+            </div>
+            <div class="col-md-4">
+              <a href="https://source.unsplash.com/random/564x564" data-toggle="lightbox"
+              data-gallary="img-gallary" data-height="564" data-width="564">
+              <img src="https://source.unsplash.com/random/564x564" alt="" class="img-fluid">
+            </a>
+            </div>
+            <div class="col-md-4">
+              <a href="https://source.unsplash.com/random/565x565" data-toggle="lightbox"
+              data-gallary="img-gallary" data-height="565" data-width="565">
+              <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid">
+            </a>
+        </div>
+      </div>
+    </section>
+
     <!-- VIDEO MODAL -->
 
     <!-- Modal -->
@@ -268,6 +316,7 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
     <script>
       // Get the current year for the copyright
@@ -295,6 +344,11 @@
           });
         });
       });
+
+      $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
     </script>
   </body>
 </html>
