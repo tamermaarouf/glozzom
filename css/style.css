@@ -1,3 +1,6 @@
+* {
+    /* border: #666 solid 1px; */
+}
 nav .nav-link {
     font-size: 1rem;
     text-transform: uppercase;
@@ -59,5 +62,32 @@ nav .nav-item.active {
 }
 
 #video-play a{
+    color: #FFF;
+}
+
+#page-header {
+    background: url('../img/image1.jpg');
+    height: 200px;
+    background-position: 0 -360px;
+    background-attachment: fixed;
+    color: #FFF;
+    padding-top: 50px;
+    border-bottom: #eee solid 1px;
+}
+
+#about .about-img{
+    margin-top: -50px;
+}
+
+#faq .card {border: #444;}
+
+#faq .card a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+#faq .card-header,
+#faq .card-body {
+    background: #444;
     color: #FFF;
 }
